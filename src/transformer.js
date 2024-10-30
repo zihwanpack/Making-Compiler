@@ -26,7 +26,6 @@ export function transformer(AST) {
             y: 0,
             width: 100,
             height: 100,
-            // 'rgb(' + paperColor + '%,' + paperColor + '%,' + paperColor + '%)',
             fill: `rgb(${paperColor}%, ${paperColor}%, ${paperColor}%)`,
           },
         });
