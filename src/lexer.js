@@ -1,3 +1,4 @@
+// 어휘 분석 lexical analysis, tokenization
 export function lexer(code) {
   // 공백문자 정규표현식
   return code

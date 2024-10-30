@@ -6,7 +6,7 @@ describe('lexer', () => {
     const input = 'Paper 100';
     const expectedOutput = [
       { type: 'word', value: 'Paper' },
-      { type: 'number', value: '100' }, // 숫자는 문자열로 반환됩니다.
+      { type: 'number', value: '100' },
     ];
 
     const result = lexer(input);
