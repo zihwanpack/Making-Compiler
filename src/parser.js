@@ -22,7 +22,7 @@ export function parser(tokens) {
           if (type === 'number') {
             expression.arguments.push({
               type: 'NumberLiteral',
-              value,
+              value: String(value),
             });
             AST.body.push(expression);
           } else {
