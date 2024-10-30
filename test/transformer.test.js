@@ -1,4 +1,5 @@
-import { describe, it, toEqual } from 'vitest';
+import { describe, it, expect } from 'vitest';
+import { transformer } from '../src/transformer.js';
 
 describe('transformer', () => {
   it('should transforming the input correctly', () => {
@@ -14,7 +15,7 @@ describe('transformer', () => {
     };
     const expectedOutput = {
       tag: 'svg',
-      attr: {
+      attribute: {
         width: 100,
         height: 100,
         viewBox: '0 0 100 100',
@@ -24,7 +25,7 @@ describe('transformer', () => {
       body: [
         {
           tag: 'rect',
-          attr: {
+          attribute: {
             x: 0,
             y: 0,
             width: 100,
